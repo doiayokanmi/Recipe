@@ -5,28 +5,31 @@ const Header = () => {
     const navLinks = [
         {
             title: "About",
-            link: "#"
+            link: "#",
+            icon: "fa-solid fa-thumbs-up"
         },
         {
             title: "Docs",
-            link: "#"
+            link: "#",
+            icon: "fa-solid fa-circle-dollar-to-slot"
         },
         {
             title: "Donate",
-            link: "#"
+            link: "#", 
+            icon: "fa-solid fa-folder-open"
         }
     ]
   return (
     <>
         <nav>
             <div id="navBrand">
-                Recipe API
+                Random Joke App
             </div>
 
             <div id="nav-links">
                 {
                     navLinks.map ((links, index) => (
-                        <a key={index} href={links.link}>{links.title}</a>
+                        <a key={index} href={links.link}><i className={links.icon}></i> {links.title}</a>
                     ))
                 }
             </div>

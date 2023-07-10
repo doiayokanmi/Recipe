@@ -7,24 +7,63 @@
 
 :root {
   --padding: 1.4em 5em;
-  --primaryColor: #ffb703;
-  
+  --primaryColor: #283618; 
+  --texColor: #fff
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav, footer {
+  background-color: var(--primaryColor);
+  padding: var(--padding);
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  color: var(--textColor);
+  align-items: center;
+  left: 0;
 }
 
 nav {
-  background-color: var(--primaryColor);
-  padding: var(--padding);
+  top: 0;
   display: flex;
   color: #fff;
   justify-content: space-between;
 }
+footer {
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
 
 nav a {
   color: #fff;
-  text-decoration: none;
   margin-left: 70px;
+  text-decoration: none;
 }
 
 #container {
-  padding: var(--padding);
+  padding: 1em;
+  width: 70vw;
+  border: 2px solid var(--primaryColor);
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#container p {
+  text-align: center;
+  color: var(--primaryColor);
+  font-size: 2em;
 }
