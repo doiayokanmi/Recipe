@@ -2,11 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Chivo Mono', monospace;
 }
 
 :root {
-  --padding: 1em 5em;
+  --padding: 1.4em 5em;
   --primaryColor: #ffb703;
+  
 }
 
 nav {
@@ -20,8 +22,7 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 50px;
-  font-weight: 600;
+  margin-left: 70px;
 }
 
 #container {
