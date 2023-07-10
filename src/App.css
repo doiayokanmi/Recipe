@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --padding: 1em 5em;
+  --primaryColor: #ffb703;
+}
+
+nav {
+  background-color: var(--primaryColor);
+  padding: var(--padding);
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 50px;
+  font-weight: 600;
+}
+
+#container {
+  padding: var(--padding);
+}
